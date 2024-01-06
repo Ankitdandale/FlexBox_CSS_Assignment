@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5 Answer</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            outline: 0;
+        }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap');
+
+        .Container 
+        {
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .Left_Container {
+         display: flex;
+         flex-direction: column;
+         width: 50%;
+         padding: 20px 45px;
+         height: 4vh;
+          
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        .logo{
+            display: flex;
+            gap: 20px;
+            height: 60px;
+            
+        }
+        .List ul{
+            display: flex;
+               gap: 15px;
+             
+                list-style: none;
+                font-size: 16px;
+                padding-bottom: 4px;
+                padding-top: 5px;
+             
+        }
+        .buttons button
+        {
+            padding: 2px 3px;
+           font-size: 18px;
+           margin: 4px;  
+           border-color: white;
+          border-radius: 5px;
+          background-color: white;
+        }
+
+        button:first-child{
+            border-color: orange;
+            background-color: orange;
+            color: white;
+
+        }
+        .heading_section
+        {
+            padding: 50px;
+            padding-left: 10px;
+            font-size: 20px;
+            margin: -10px;
+        }
+        .rules{
+            font-size: 20px;
+            padding-top: 3px;
+             display: flex;
+             gap: 10px;
+        }
+        .Selection_part{
+            display: flex;
+            gap: 15px;
+           margin-top: -20px;
+            
+        }
+        .Selection_part button{
+            display: flex;
+            align-items: center;
+            padding:0 5px;
+            background-color: white;
+            border-color: bisque;
+        }
+        .Selection_part button:first-child{
+            background-color: rgba(7, 7, 100, 0.788);
+            border-color: rgba(10, 10, 143, 0.726);
+        }
+
+        .Search_Train
+        {
+            display: flex;
+            gap: 20px;
+            border: 1.01px solid;
+            border-radius: 5px;
+            border-color: #3333333d;
+            padding: 30px 30px 25px 70px;
+            margin-top: 20px;
+
+        }
+
+        .Search_From
+        {
+          display: flex; 
+          gap: 10px;
+          position: relative;
+        }
+        .from_img{
+            position: relative;
+             top: 16px;
+             height: 35px;
+        }
+        .Search_From ul
+        {
+            font-family: 'Inter';
+            font-size: 13.01px;
+            list-style: none;
+            color: #333333e3;
+          
+        }
+
+        .Search_To
+        {
+          display: flex;
+          gap: 20px;
+          position: relative;
+      
+        }
+
+        .to_img{
+            position: relative;
+              top: 15px;
+              left: 55px;
+               height: 35px;
+
+        }
+
+        .Search_To ul
+        {
+            font-family: 'Inter';
+            font-size: 13.01px;
+            list-style: none;
+            padding-left: 40px;
+            color: #333333e3;
+          
+        }
+
+        .Search_Train2
+        {
+            display: flex;
+            gap: 20px;
+            padding-left: 20px;
+            border: 1.01px solid;
+            border-radius: 5px;
+            border-color: #3333333d;
+            padding: 28px 60px;
+            margin-top: 10px;
+
+        }
+
+        .Search_Date
+        {
+          display: flex; 
+          gap: 22px;
+          position: relative;
+          padding-right: 5px;
+          margin-right: 5px;
+        }
+
+        .date_img{
+            position: relative;
+            top: 12px;
+            left: 19px;
+            height: 35px;
+        }
+
+        .Search_Date ul
+        {
+            font-family: 'Inter';
+            font-size: 13.01px;
+            list-style: none;
+            color: #333333e3;
+          
+        }
+
+        .Search_Book
+        {
+          display: flex; 
+          gap: 20px;
+          position: relative;
+        }
+
+        .book_img{
+            position: relative;
+            top: 14px;
+            left: 17px;
+             height: 35px;
+        }
+
+        .Search_Book ul
+        {
+            font-family: 'Inter';
+            font-size: 13.01px;
+            list-style: none;
+            color: #333333e3;
+          
+        }
+
+        .Search_Type
+        {
+          display: flex;
+          gap: 20px;
+          position: relative;
+      
+        }
+        .type_img{
+            position: relative;
+            top: 15px;
+            left: 19px;
+            height: 34px;
+        }
+
+        .Search_Type ul
+        {
+            font-family: 'Inter';
+            font-size: 13.01px;
+            list-style: none;
+            color: #333333e3;
+          
+        }
+
+        .search_trainpart
+        {
+            display: flex;
+           border: 1px solid green;
+           background-color: green;
+           justify-content: center;
+           margin: 20px 0px;
+           padding: 10px;
+           border-radius: 6px;
+           
+        }
+        .search_trainpart b
+        {
+            color: white;
+            position: relative;
+            top: -5px;
+        }
+
+
+        .Right_Container {
+        
+            width: 50%;
+        }
+        .Right_Container img
+        {
+            /* width: 670px; */
+            height: 95vh;
+            width: 49vw;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="Container"> <!-- !!!!!!! Left Section !!!!!!! -->
+        <section class="Left_Container">
+           <div class="header">
+             <div class="logo">
+                <img src="./Images/IRCTCLogo.png" alt="IRCTC ">
+                <img src="./Images/indianRailwaysLogo.png" alt="IRCTC ">
+             </div>
+             <div class="List">
+                <ul>
+                    <li>Ask Disha</li>
+                    <li>Contact Us </li>
+                    <li>Alerts</li>
+                </ul>
+                <div class="buttons">
+                    <button>Login</button>
+                    <button>Register</button>
+                    <button>Agent Login</button>
+                 </div>
+             </div>
+
+
+           </div>
+           <div class="heading_section">
+                   <h2>Indian Railways</h2>
+                   <div class="rules">
+                    <span style="color: green;">Safety</span>
+                    <span style="color:red ;">Security</span>
+                    <span style="color: blue;">Punctuality</span>
+                   </div>
+           </div>
+           <div class="Selection_part">
+            <button class="Book_Ticket"><img src="./Images/ticket_icon.png" alt="Ticket Icon"> Book Ticket</button>
+            <button class="PNR_Status"><img src="./Images/tick_icon.png" alt="Tick Icon">PNR Status</button>
+            <button class="Charts"><img src="./Images/chart_icon.png" alt="Chart icon">Charts | Vacancy</button>
+
+           </div>
+
+           <!-- Selact Location Part From To Train -->
+
+           <div class="Search_Train">
+
+            <div class="Search_From">
+                <img class="from_img" src="./Images/departure_train_icon.png" alt="Train" >
+             
+                <div>
+                    <ul>
+                        <li>From <img src="./Images/expand_more_icon.png" alt="" width="20px" height="20px"></li>
+                        <li style="font-size: 18px; color: black; "><b>Bangalore</b></li>
+                        <li>KSR - Bangalore</li>
+                    </ul>
+                </div>
+            
+            </div>
+            <div >
+                <img src="./Images/to_from_arrow.png" alt="">
+            </div>
+
+            <div class="Search_To">
+                <img class="to_img" src="./Images/destination_train_icon.png" alt="Train" >
+             
+                <div>
+                    <ul>
+                        <li>To <img src="./Images/expand_more_icon.png" alt=""  width="20px" height="20px"></li>
+                        <li style="font-size: 18px; color: black; "><b>Kasaragod</b></li>
+                        <li>KSD - Kasaragod</li>
+                    </ul>
+                </div>
+            
+            </div>
+
+           </div>
+
+           <!-- Enter DAte A Part Section -->
+
+           <div class="Search_Train2">
+
+            <div class="Search_Date">
+                <img src="./Images/calander-icon.png" alt="Calender" class="date_img">
+             
+                <div>
+                    <ul>
+                        <li>Date <img src="./Images/expand_more_icon.png" alt=""  width="20px" height="20px"></li>
+                        <li style="font-size: 18px; color: black; "><b>01 Aug 23</b></li>
+                        <li>Tuesday</li>
+                    </ul>
+                </div>
+            
+            </div>
+            <div class="Search_Book">
+                <img src="./Images/threedot-icon.png" alt="ThreeDot" class="book_img">
+                <div>
+                    <ul>
+                        <li>Class <img src="./Images/expand_more_icon.png" alt=""  width="20px" height="20px"></li>
+                        <li style="font-size: 18px; color: black; "><b>3A</b></li>
+                        <li>AC 3 Tier</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="Search_Type">
+                <img src="./Images/widgets_icon.png" alt="Train" class="type_img">
+             
+                <div>
+                    <ul>
+                        <li>Seat Type <img src="./Images/expand_more_icon.png" alt=""  width="20px" height="20px"></li>
+                        <li style="font-size: 18px; color: black; "><b>TATKAL</b></li>
+                        <li>AC 3 Tier</li>
+                    </ul>
+                </div>
+            
+            </div>
+
+           </div>
+
+            <!-- Search Train Part -->
+
+            <div class="search_trainpart">
+                <p><b>Search Train </b> <img src="./Images/right-arrow-icon.png" alt="right-arrow-icon" height="20px" width="30px"></p>
+            </div>
+           
+           
+        </section> 
+              <!-- !!!!!!!! Right Section !!!!!!! -->
+            <section class="Right_Container"> <img src="/Images/heroImage.png" alt="Train Picture"> </section>
+        
+    </div>
+</body>
+
+</html>

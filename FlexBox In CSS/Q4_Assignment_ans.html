@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Answer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+           *{
+            margin: 0;
+            padding: 0;
+           }
+           body{
+            display: flex;
+            background-color: rgb(5, 5, 46);
+             justify-content: center;
+             font-family: sans-serif;
+          
+           }
+           .PricingSection{
+            padding: 20px;
+            margin: 50px auto;
+            width: 800px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgb(45, 45, 250);
+
+           }
+           .free-plan{
+
+            height: 300px;
+            width: 250px;
+            border: 3px solid rgb(245, 245, 245) ;
+            border-radius: 10px;
+            padding:10px ;
+            margin: 10px ;
+            padding-top: 20px;
+            box-shadow: 0px 1px 10px 0px #00000040;
+
+            
+           }
+           .basic-plan{
+
+              height: 300px;
+              width: 250px;
+              border: 3px solid white;
+              border-radius: 10px;
+              padding:10px;
+              margin: 10px;
+              padding-top: 20px;
+              background-color: rgb(3, 3, 56);
+              color: antiquewhite;
+              box-shadow: 0px 1px 10px 0px #00000040;
+
+             }
+            .pro-plan{
+
+            height: 300px;
+            width: 250px;
+            border: 3px solid rgb(245, 245, 245) ;
+            border-radius: 10px;
+            padding:10px;
+            margin: 10px;
+            padding-top: 20px;
+            box-shadow: 0px 1px 10px 0px #00000040;
+
+
+            }
+           i{
+            color: rgb(15, 15, 71);
+            display: flex;
+            align-items: center;
+            font-size: x-large;
+            padding-left: 13px;
+            
+           }
+
+           .features{
+             display: flex;
+            margin: 15px;
+            gap: 10px;
+           }
+           .btn{
+            background-color: rgb(15, 15, 68);
+            color: aliceblue;
+            margin:20px auto;
+            font-size: larger;
+            border-radius: 10px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            
+           
+           }
+           .button2{
+            color: black;
+            background-color: aliceblue;
+            font-size: larger;
+           }
+           .plans{
+           padding-left: 30px;
+           }
+           .about{
+             padding-left: 30px;
+             
+           }
+           .dollar{
+            padding-left: 30px;
+           }
+           .price{
+            color: rgb(35, 35, 245);
+            position: relative;
+            left: 315px;
+            top: 30px;
+           }
+
+    </style>
+</head>
+<body>
+    <p class="price">PricingSection</p>
+    <section class="PricingSection">
+        <!-- Free Plan section   -->
+        <div class="free-plan"> 
+            <h1 class="plans">Free Plan</h1>
+            <p class="about">For peronal</p>
+            <h2 class="dollar">$0</h2>
+            <p class="features"><i class="fa-sharp fa-solid fa-circle-check" ></i> 1 users</p>
+            <p class="features"><i class="fa-sharp fa-solid fa-circle-check"></i> 4 Web mails</p>
+            <p class="features"><i class="fa-sharp fa-solid fa-circle-check"></i> Respnsive Website</p>
+            <p class="features"><i class="fa-sharp fa-solid fa-circle-check"></i>Free SSL</p>
+            <button class="btn button1"> Subscribe now</button>
+        </div>
+                <!-- Basic Plan section   -->
+                <div class="basic-plan"> 
+                    <h1 class="plans">Basic Plan</h1>
+                    <p class="about">For Small Business</p>
+                    <h2 class="dollar">$29</h2>
+                    <p class="features"><i class="fa-sharp fa-solid fa-circle-check" style="color: aliceblue;"></i> 4 users</p>
+                    <p class="features"><i class="fa-sharp fa-solid fa-circle-check"style="color: aliceblue;"></i> 10 Web mails</p>
+                    <p class="features"><i class="fa-sharp fa-solid fa-circle-check"style="color: aliceblue;"></i> Respnsive Website</p>
+                    <p class="features"><i class="fa-sharp fa-solid fa-circle-check"style="color: aliceblue;"></i> Free SSL</p>
+                    <button class="btn button2">Subscribe now</button>
+                </div>
+                        <!-- Pro Plan section   -->
+        <div class="pro-plan"> 
+            <h1 class="plans">Pro Plan</h1>
+            <p class="about">For enterprise</p>
+            <h2 class="dollar">$49</h2>
+            <p class="features"><i class="fa-sharp fa-solid fa-circle-check"></i> unlimited users</p>
+            <p class="features"><i class="fa-sharp fa-solid fa-circle-check"></i> unlimited Web mails</p>
+            <p class="features"><i class="fa-sharp fa-solid fa-circle-check"></i> Respnsive Website</p>
+            <p class="features"><i class="fa-sharp fa-solid fa-circle-check"></i> Free SSL</p>
+            <button class="btn button3">Subscribe now</button>
+        </div>
+
+    </section>
+</body>
+</html>

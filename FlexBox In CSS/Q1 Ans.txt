@@ -1,0 +1,35 @@
+Q1) Describe the main difference between CSS Flexbox layout model and the CSS Grid layout model.
+    When would you Choose to use one over the other?
+
+Answere :
+
+ (.) CSS FlexBox :
+                  (i) The CSS Flexbox offers a one-dimensional layout. It is helpful in allocating and aligning the 
+                      space among items in a container (made of grids). It works with all kinds of display devices 
+                      and screen sizes.
+                      To get started you have to define a container element as a grid with display: flex;
+
+                 (ii) Flexbox gives you more flexibility while working on either element (row or column). HTML markup 
+                      and CSS will be easy to manage in this type of scenario.
+
+                (iii) Flex Container is the parent element while Flex Item represents the children. The Flex Container
+                      can ensure balanced representation by adjusting item dimensions. This allows developers to design 
+                      for fluctuating screen sizes
+
+                (iv) Flex Direction allows developers to align elements vertically or horizontally, which is used when 
+                     developers create and reverse rows or columns.
+
+(.)CSS Gridlayout :
+
+                 (i) CSS Grid Layout, is a two-dimensional grid-based layout system with rows and columns, making it easier 
+                     to design web pages without having to use floats and positioning. Like tables, grid layout allow us to 
+                     align elements into columns and rows.
+                     To get started you have to define a container element as a grid with display: grid;
+   
+                (ii) GRID gives you more flexibility to move around the blocks irrespective of your HTML markup.
+
+               (iii) Grid has two-dimension layout capabilities which allow flexible widths as a unit of length. This compensates 
+                     for the limitations in Flex.
+
+               (iv) CSS Grid deploys fractional measure units for grid fluidity and auto-keyword functionality to automatically 
+                    adjust columns or rows.
